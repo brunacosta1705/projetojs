@@ -34,7 +34,6 @@ async function insert(user) {
         let query_insert = `INSERT INTO USUARIO(NOME, SOBRENOME, CPF, TELEFONE, EMAIL, SENHA) VALUES($1, $2, $3, $4, $5, $6)`
         await db.query(query_insert, [user.nome, user.sobrenome, user.cpf, user.telefone, user.email, user.senha])
 
-        await db.end()
 
         console.log('inserido')
         return json = {
@@ -42,7 +41,6 @@ async function insert(user) {
             "responseMessage": "Inserido"
         }
     } catch (error) {
-        await db.end()
         console.log(error)
 
         return json = {
