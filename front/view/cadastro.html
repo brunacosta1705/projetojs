@@ -18,36 +18,33 @@
 
 <body>
     <div class="container">
-        <form>
-            <!-- tem que ver isso aqui -->
-
+        <form name="formulario" method="get">
             <div class="form-row">
                 <div class="form-group col-md-6">
                     <label for="inputName">Nome</label>
-                    <input type="text" id="inputName" class="form-control" required>
+                    <input type="text" id="nomeid" class="form-control" required>
                 </div>
                 <div class="form-group col-md-6">
                     <label for="inputSurname">Sobrenome</label>
-                    <input type="text" class="form-control" id="inputSurname" required>
+                    <input type="text" class="form-control" id="sobrenomeid" required>
                 </div>
                 <div class="form-group col-md-6">
-                    <label for="inputSurname">CPF</label>
-                    <input type="text" class="form-control" id="inputCpf" placeholder="000.000.000-00" required>
+                    <label for="inputCpf">CPF</label>
+                    <input type="text" class="form-control" id="cpfid" placeholder="000.000.000-00" required>
                 </div>
                 <div class="form-group col-md-6">
-                    <label for="inputSurname">Telefone</label>
-                    <input type="text" class="form-control" id="inputTelefone" placeholder="(+55) (00) 0 0000-0000" required>
+                    <label for="inputTelefone">Telefone</label>
+                    <input type="text" class="form-control" id="telefoneid" placeholder="(+55) (00) 0 0000-0000" required>
                 </div>
                 <div class="form-group col-md-6">
-                    <label for="inputEmail4">E-mail</label>
-                    <input type="email" class="form-control" id="inputEmail" required>
+                    <label for="inputEmail">E-mail</label>
+                    <input type="email" class="form-control" id="emailid" required>
                 </div>
                 <div class="form-group col-md-6">
                     <label for="inputPassword4">Senha</label>
-                    <input type="password" class="form-control" id="inputPassword4" required>
+                    <input type="password" class="form-control" id="senhaid" required>
                 </div>
             </div>
-
             <br>
 
             <button type="button" class="btn btn-primary" onclick="cadastro()">Enviar</button>

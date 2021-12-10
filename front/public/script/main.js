@@ -5,12 +5,12 @@ async function cadastro() {
     myHeaders.append("Content-Type", "application/json");
 
     var raw = JSON.stringify({
-        "nome": document.getElementById("inputName"),
-        "sobrenome": document.getElementById("inputSurname"),
-        "telefone": document.getElementById("inputTelefone"),
-        "cpf": document.getElementById("inputCpf"),
-        "email": document.getElementById("inputEmail"),
-        "senha": document.getElementById("inputPassword4")
+        "nome": document.getElementById("nomeid").value,
+        "sobrenome": document.getElementById("sobrenomeid").value,
+        "telefone": document.getElementById("telefoneid").value,
+        "cpf": document.getElementById("cpfid").value,
+        "email": document.getElementById("emailid").value,
+        "senha": document.getElementById("senhaid").value
     });
 
     var requestOptions = {
