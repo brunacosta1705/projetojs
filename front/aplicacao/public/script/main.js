@@ -49,7 +49,7 @@ async function login() {
         .then(response => response.json())
         .then(result => {
             if (result.status == 1) {
-                window.open('/front/aplicacao/view/home.html')
+                window.open('../teste.html')
             } else {
                 alert(result.responseMessage)
             }
