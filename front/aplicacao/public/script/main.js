@@ -49,7 +49,7 @@ async function login() {
         .then(response => response.json())
         .then(result => {
             if (result.status == 1) {
-                window.open('../teste.html')
+                window.open('home.html')
             } else {
                 alert(result.responseMessage)
             }
