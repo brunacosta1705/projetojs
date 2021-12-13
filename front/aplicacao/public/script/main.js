@@ -24,9 +24,9 @@ async function cadastro() {
         .then(response => response.json())
         .then(result => {
             alert(JSON.stringify(result.responseMessage));
+            window.open(href = 'login.html')
         })
         .catch(error => console.log('error', error));
-
 }
 
 async function login() {
