@@ -10,23 +10,6 @@ body {
     font-family: 'Numans', sans-serif;
 }
 
-.container {
-    height: 100%;
-    align-content: center;
-}
-
-.card {
-    height: 400px;
-    margin-top: auto;
-    margin-bottom: auto;
-    width: 500px;
-    background-color: rgba(0, 0, 0, 0.5) !important;
-}
-
-label {
+h1 {
     color: #FFF;
-}
-
-.card-header {
-    color: #FFC312;
 }
